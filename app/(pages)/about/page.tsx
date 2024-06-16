@@ -1,4 +1,5 @@
 import { AboutItem } from '@/components/AboutItem/AboutItem';
+import { dataArray } from './dataArray';
 
 export const metadata = {
   title: 'Portfolio | About',
@@ -12,12 +13,13 @@ export default function About() {
           About me
         </h1>
       </div>
-      <AboutItem
-        title="Personal information"
-        description="My name is Sîrbu Nicolae, I am a front-end developer with more than a
-          year of experience."
-      />
-
+      {dataArray.map((data, index) => (
+        <AboutItem
+          key={data.title}
+          title={data.title}
+          description={data.description}
+        />
+      ))}
       <AboutItem title="Personal qualities">
         <ul className="list-disc list-inside">
           <li>Communication skills </li>
@@ -26,16 +28,6 @@ export default function About() {
           <li>desire to develop as a person and professional.</li>
         </ul>
       </AboutItem>
-      <AboutItem
-        title="Interests"
-        description="I am interested in some sciences such as astrophysics, quantum physics
-          and some related ones. I am also interested in philosophy and poetry."
-      />
-      <AboutItem
-        title="Education"
-        description="After finishing 9th grade, I went to college to major in web
-          applications. I am currently a third year student."
-      />
     </div>
   );
 }
