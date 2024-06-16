@@ -1,0 +1,25 @@
+:root {
+  --bg: #e0e8e5;
+  --header: #5a9696;
+  --color: #0b272d;
+  --header-footer-text: #0b272d;
+}
+
+.dark {
+  --bg: #101519;
+  --header: #684a83;
+  --color: #d9c8c8;
+  --header-footer-text: #ffffff;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--color);
+}
+
+.header,
+.footer {
+  color: var(--header-footer-text);
+  font-size: 18px;
+  background-color: var(--header);
+}

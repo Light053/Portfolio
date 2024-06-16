@@ -1,33 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+@import './themes/light.css';
+@import './themes/dark.css';
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .grid-layout {
+    @apply grid grid-cols-layout grid-rows-layout min-h-screen gap-x-6;
+  }
+  .grid-header {
+    @apply col-start-2 col-span-1;
+  }
+  .grid-main {
+    @apply col-start-2 col-span-1;
+  }
+  .grid-footer {
+    @apply col-start-2 col-span-1;
   }
 }
