@@ -4,6 +4,7 @@ import { Experience } from '@/components/Experinece/Experience';
 
 export const metadata = {
   title: 'Portfolio | Home',
+  description: 'Home',
 };
 
 export default function Home() {

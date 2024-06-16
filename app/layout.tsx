@@ -1,15 +1,15 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
 import './globals.css';
+import { Rubik } from 'next/font/google';
 import { Header } from '@/components/Header/Header';
 import { Footer } from '@/components/Footer/Footer';
 import { ThemeProvider } from 'next-themes';
-import ThemeSwitch from '@/helpers/themeSwitcher/ThemeSwitcher';
 
-const inter = Inter({ subsets: ['latin'] });
+const rubik = Rubik({ subsets: ['latin'], weight: ['400', '500', '700'] });
 
 export const metadata: Metadata = {
   title: 'Portfolio',
+  description: 'My portfolio',
 };
 
 export default function RootLayout({
@@ -18,8 +18,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html suppressHydrationWarning>
-      <body>
+    <html suppressHydrationWarning lang="en" className={rubik.className}>
+      <body className={rubik.className}>
         <ThemeProvider attribute="class">
           <div className="grid-layout">
             <header className="p-4 grid-header header">

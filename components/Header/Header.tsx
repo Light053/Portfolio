@@ -20,7 +20,7 @@ export const Header = () => {
 
   return (
     <div className="w-full flex items-center justify-between rounded-3xl overflow-hidden p-4 bg-gray-100 dark:bg-gray-800">
-      <div className="flex items-center">
+      <div className="flex items-center text-xl">
         <Link href={'/'} passHref>
           <span className="font-bold px-4 py-2">Home</span>
         </Link>

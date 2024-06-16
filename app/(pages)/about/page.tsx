@@ -3,6 +3,7 @@ import { dataArray } from './dataArray';
 
 export const metadata = {
   title: 'Portfolio | About',
+  description: 'About me',
 };
 
 export default function About() {

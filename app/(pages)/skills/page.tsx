@@ -3,6 +3,7 @@ import { skills } from './dataArray';
 
 export const metadata = {
   title: 'Portfolio | Skills',
+  description: 'My skills',
 };
 
 export default function Skills() {
