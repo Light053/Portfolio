@@ -20,7 +20,8 @@ export const Introduction = () => {
       </h1>
       <h2 className="text-xl md:text-2xl font-bold leading-8 w-full md:w-96">
         <span className="text-lightTheme-alert-text dark:text-darkTheme-alert-text text-sm md:text-lg">
-          My name is Sîrbu Nicolae, I am a front-end developer
+          My name is Sîrbu Nicolae, I am a front-end developer,I am from
+          Moldova, Balti city
         </span>
         . I specialize in creating interactive web applications that are
         user-friendly and enjoyable to use.

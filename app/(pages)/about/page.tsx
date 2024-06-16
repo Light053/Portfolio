@@ -9,7 +9,7 @@ export default function About() {
       opacity: 1,
       transition: {
         delayChildren: 0.5,
-        staggerChildren: 0.3, // Задержка между появлением элементов
+        staggerChildren: 0.3,
       },
     },
   };
@@ -59,8 +59,12 @@ export default function About() {
       >
         <h2 className="mb-4">Personal qualities</h2>
         <motion.div variants={itemVariants}>
-          Communication skills - openness - responsibility - desire to develop
-          as a person and professional.
+          <ul className="list-disc list-inside">
+            <li>Communication skills </li>
+            <li>openness</li>
+            <li>responsibility</li>
+            <li>desire to develop as a person and professional.</li>
+          </ul>
         </motion.div>
       </motion.div>
       <motion.div

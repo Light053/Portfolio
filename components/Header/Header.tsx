@@ -30,9 +30,6 @@ export const Header = () => {
         <Link href={'/about'} passHref>
           <span className="font-bold px-4 py-2">About</span>
         </Link>
-        <Link href={'/contacts'} passHref>
-          <span className="font-bold px-4 py-2">Contacts</span>
-        </Link>
         <Link href={'/skills'} passHref>
           <span className="font-bold px-4 py-2">Skills</span>
         </Link>
