@@ -14,7 +14,7 @@ export const Header = () => {
   };
 
   const variants = {
-    hidden: { opacity: 1, x: -200, y: 0 },
+    hidden: { opacity: 1, x: 0, y: -300 },
     visible: { opacity: 1, x: 0, y: 0 },
   };
 
@@ -47,9 +47,9 @@ export const Header = () => {
           variants={variants}
           initial="hidden"
           animate="visible"
-          className="absolute top-0 left-0 w-full h-full bg-gray-100 dark:bg-gray-800 flex flex-col items-center justify-center md:hidden"
+          className="z-50 absolute top-0 left-0 w-full h-full bg-gray-100 dark:bg-gray-800 flex flex-col items-center justify-center md:hidden"
         >
-          <button onClick={toggleMenu} className="absolute top-4 right-4">
+          <button onClick={toggleMenu} className="absolute top-7 right-7">
             <FaTimes size={24} />
           </button>
           <Link href={'/about'} passHref>

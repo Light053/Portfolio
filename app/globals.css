@@ -39,4 +39,17 @@
       @apply col-start-2 col-end-3;
     }
   }
+
+  .grid-full-width {
+    margin-top: 30px;
+    @apply col-span-full;
+  }
+
+  .phone-block {
+    @media (max-width: 420px) {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+  }
 }

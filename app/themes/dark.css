@@ -7,7 +7,7 @@
 
 .dark {
   --bg: #101519;
-  --header: #684a83;
+  --header: #12142a;
   --color: #d9c8c8;
   --header-footer-text: #ffffff;
 }
@@ -17,7 +17,6 @@ body {
   color: var(--color);
 }
 
-.header,
 .footer {
   color: var(--header-footer-text);
   font-size: 18px;

@@ -3,7 +3,6 @@ body {
   color: var(--color);
 }
 
-.header,
 .footer {
   color: var(--header-footer-text);
   font-size: 18px;
