@@ -54,11 +54,6 @@ export const Header = () => {
               About
             </span>
           </Link>
-          <Link href={'/contacts'} passHref>
-            <span className="font-bold px-4 py-2 text-2xl" onClick={toggleMenu}>
-              Contacts
-            </span>
-          </Link>
           <Link href={'/skills'} passHref>
             <span className="font-bold px-4 py-2 text-2xl" onClick={toggleMenu}>
               Skills

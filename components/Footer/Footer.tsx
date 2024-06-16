@@ -5,7 +5,7 @@ import TelegramIcon from '@/assets/Telegram.svg?svgr';
 
 export const Footer = () => {
   return (
-    <div>
+    <div className="w-full">
       <div className="flex justify-center h-0">
         <Link
           href={'https://www.linkedin.com/in/nicolae-s%C3%AErbu-83472a27a/'}

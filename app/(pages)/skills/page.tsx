@@ -1,34 +1,7 @@
-'use client';
+import { SkillItem } from '@/components/SkillItem/SkillItem';
 
-import { motion } from 'framer-motion';
-
-const SkillItem = ({
-  title,
-  description,
-}: {
-  title: string;
-  description: string;
-}) => {
-  const variants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0 },
-  };
-
-  return (
-    <motion.li
-      variants={variants}
-      initial="hidden"
-      animate="visible"
-      className="mt-4"
-    >
-      <div className="font-semibold dark:bg-[#12142a] bg-gray-100 p-3 rounded-lg">
-        <span className="font-bold text-lightTheme-alert-text dark:text-lightTheme-alert-text">
-          {title}:
-        </span>{' '}
-        {description}
-      </div>
-    </motion.li>
-  );
+export const metadata = {
+  title: 'Portfolio | Skills',
 };
 
 export default function Skills() {

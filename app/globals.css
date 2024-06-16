@@ -34,11 +34,6 @@
   .grid-footer {
     @apply col-span-full;
   }
-  @media (min-width: 1200px) {
-    .grid-footer {
-      @apply col-start-2 col-end-3;
-    }
-  }
 
   .grid-full-width {
     margin-top: 30px;

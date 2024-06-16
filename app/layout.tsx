@@ -26,7 +26,7 @@ export default function RootLayout({
               <Header />
             </header>
             <main className="pt-16 pb-16 grid-main max-w-1200">{children}</main>
-            <footer className="bg-header-bg pt-4 pb-4 grid-footer footer">
+            <footer className="bg-header-bg pt-4 pb-4 grid-footer footer w-full">
               <Footer />
             </footer>
           </div>
