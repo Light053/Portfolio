@@ -6,15 +6,37 @@
 
 @layer utilities {
   .grid-layout {
-    @apply grid grid-cols-layout grid-rows-layout min-h-screen gap-x-6;
+    @apply grid min-h-screen gap-x-6;
+    grid-template-columns: 1fr;
+    grid-template-rows: var(--grid-rows-layout, auto 1fr auto);
+  }
+  @media (min-width: 1200px) {
+    .grid-layout {
+      grid-template-columns: auto minmax(0, 1200px) auto;
+    }
   }
   .grid-header {
-    @apply col-start-2 col-span-1;
+    @apply col-span-full;
+  }
+  @media (min-width: 1200px) {
+    .grid-header {
+      @apply col-start-2 col-end-3;
+    }
   }
   .grid-main {
-    @apply col-start-2 col-span-1;
+    @apply col-span-full;
+  }
+  @media (min-width: 1200px) {
+    .grid-main {
+      @apply col-start-2 col-end-3;
+    }
   }
   .grid-footer {
-    @apply col-start-2 col-span-1;
+    @apply col-span-full;
+  }
+  @media (min-width: 1200px) {
+    .grid-footer {
+      @apply col-start-2 col-end-3;
+    }
   }
 }
