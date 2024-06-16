@@ -24,7 +24,9 @@ export const Header = () => {
         <Link href={'/'} passHref>
           <span className="font-bold px-4 py-2">Home</span>
         </Link>
-        <ThemeSwitch />
+        <div className="cursor-pointer">
+          <ThemeSwitch />
+        </div>
       </div>
       <div className="hidden md:flex">
         <Link href={'/about'} passHref>

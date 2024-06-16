@@ -22,7 +22,7 @@ export const Languages = () => {
           English: A2
         </li>
         <li className="text-lightTheme-alert-text dark:text-darkTheme-alert-text">
-          Russian: Native
+          Russian: Fluent
         </li>
         <li className="text-lightTheme-alert-text dark:text-darkTheme-alert-text">
           Romanian: Native
