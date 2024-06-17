@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import Link from 'next/link';
 import ThemeSwitch from '@/helpers/themeSwitcher/ThemeSwitcher';
@@ -8,10 +8,15 @@ import { motion } from 'framer-motion';
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const variants = {
     hidden: { opacity: 1, x: 0, y: -300 },
@@ -24,9 +29,7 @@ export const Header = () => {
         <Link href={'/'} passHref>
           <span className="font-bold px-4 py-2">Home</span>
         </Link>
-        <div className="cursor-pointer">
-          <ThemeSwitch />
-        </div>
+        <div className="cursor-pointer">{mounted && <ThemeSwitch />}</div>
       </div>
       <div className="hidden md:flex">
         <Link href={'/about'} passHref>
@@ -36,11 +39,11 @@ export const Header = () => {
           <span className="font-bold px-4 py-2">Skills</span>
         </Link>
       </div>
-      <div className="md:hidden">
-        <button onClick={toggleMenu} className="focus:outline-none">
-          {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
-        </button>
-      </div>
+
+      <button onClick={toggleMenu} className="focus:outline-none md:hidden">
+        {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+      </button>
+
       {isOpen && (
         <motion.div
           variants={variants}

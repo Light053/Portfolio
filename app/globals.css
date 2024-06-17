@@ -38,6 +38,10 @@
   .grid-full-width {
     margin-top: 30px;
     @apply col-span-full;
+
+    @media (max-width: 768px) {
+      margin-top: 0px;
+    }
   }
 
   .phone-block {

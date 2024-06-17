@@ -8,7 +8,7 @@ export const metadata = {
 
 export default function About() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-center p-4">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-center p-4 ">
       <div className="col-span-1 md:col-span-2">
         <h1 className="text-3xl font-bold underline text-lightTheme-alert-text dark:text-darkTheme-alert-text">
           About me

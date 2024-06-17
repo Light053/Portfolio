@@ -39,7 +39,7 @@ export const AboutItem = (props: AboutItemProps) => {
       variants={containerVariants}
       initial="hidden"
       animate="visible"
-      className="font-semibold text-2xl bg-[#5a9696] dark:bg-gray-800 text-white p-4 rounded-xl mt-10 md:col-span-1"
+      className="font-semibold text-2xl bg-[#5a9696] dark:bg-gray-800 text-white p-4 rounded-xl mt-3 md:mt-10 md:col-span-1"
     >
       <h2 className="mb-4 text-lightTheme-alert-text dark:text-darkTheme-alert-text">
         {title}
